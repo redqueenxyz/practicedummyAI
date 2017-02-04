@@ -7,7 +7,7 @@ To use it, you will need to use [`git`](https://up1.github.io/git-guide/index.ht
 ### Problem 1
 
 ___
-`World Hello`
+`Hello World`
 
 1) Fork this repository. 
 
