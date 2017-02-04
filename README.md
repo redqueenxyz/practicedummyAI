@@ -1,4 +1,4 @@
-## practicedummyAI
+## tutorialAI
 
 This is a practice repository, just for fun.  
 
