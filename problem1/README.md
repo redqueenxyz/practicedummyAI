@@ -4,7 +4,7 @@
 To complete this problem, you will need to use [`git`](https://up1.github.io/git-guide/index.html),  via a [terminal](https://www.iterm2.com/) or an [`app`](https://desktop.github.com/). 
 
 ___
-`World Hello`
+`Hello World`
 
 1) Fork this repository. 
 
