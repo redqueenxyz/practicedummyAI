@@ -3,8 +3,11 @@
 
 To complete this problem, you may use one of the languages approved for this project, i.e. Python, Javascript, or C to solve the following problems. 
 
-Code submissions should take the form of a pull request with the solution code in this subdirectory (i.e. `problem3/solution.py`). Could should be fully documented, account for errors, and oeprate effeciently. 
+Code submissions should take the form of a pull request with the solution code in this subdirectory (i.e. `problem3/solution.py`). Could should be fully documented, account for errors, and operate effeciently. 
 
+Operatives are also actively encouraged to use sites like [Codewars](https://www.codewars.com/dashboard) and [HackerRank](https://www.hackerrank.com/dashboard) for consistent practice and learning. 
+
+### Arrays
 1)	Define a function `rotate` that takes an array `l` of N integers and a number `j`, perform `j` left rotations on the array then print the array. A left rotation operation on an array shifts each of the array's elements 1 unit to the left.
 
 #### Example: 

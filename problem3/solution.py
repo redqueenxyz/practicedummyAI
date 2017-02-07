@@ -1,6 +1,8 @@
 #! /usr/bin/env python3
 
-# 3.1: List rotations
+
+## Arrays
+# Array rotations
 
 def rotate(l, j):
     """
@@ -27,7 +29,7 @@ def rotate(l, j):
      return(l[-j:] + l[:-j]) if l and n > 0 else print('Invalid inputs.')
 
         
-# 3.2: Find differences
+# Array differences
 
 def findPairswithDiff(arr, diff):
     """
