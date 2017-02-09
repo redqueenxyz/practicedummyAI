@@ -1,9 +1,9 @@
 ## tutorialAI
 ### Problem 3
 
-To complete this problem, you may use one of the languages approved for this project, i.e. Python, Javascript, or C to solve the following problems. 
+To solve these problems, you may use any language you like, but it one of the pre-approved project languages, i.e. Python, Javascript, or C, is preferred.
 
-Code submissions should take the form of a pull request with the solution code in this subdirectory (i.e. `problem3/solution.py`). Could should be fully documented, account for errors, and operate effeciently. 
+Code submissions should take the form of a pull request with the solution code in this subdirectory (i.e. `problem3/solutions/name_solution.type`). Code should be fully documented, account for errors, and operate effeciently. 
 
 Operatives are also actively encouraged to use sites like [Codewars](https://www.codewars.com/dashboard) and [HackerRank](https://www.hackerrank.com/dashboard) for consistent practice and learning. 
 
