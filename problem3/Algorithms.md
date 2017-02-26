@@ -44,7 +44,7 @@ Recursion
 			else:
 				for i in xrange(start,end+1):
 					str[start], str[i] = str[i], str[start]		# swap
-					permute(str, start+1, end)			# recurse
+					permute(str, start+1, end)				# recurse
 					str[start], str[i] = str[i], str[start] 	# backtrack
 
 Greedy
