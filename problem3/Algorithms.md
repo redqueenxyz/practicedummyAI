@@ -44,7 +44,7 @@ Recursion
 			else:
 				for i in xrange(start,end+1):
 					str[start], str[i] = str[i], str[start]		# swap
-					permute(str, start+1, end)					# recurse
+					permute(str, start+1, end)			# recurse
 					str[start], str[i] = str[i], str[start] 	# backtrack
 
 Greedy
@@ -63,7 +63,7 @@ Greedy
 		for i = 0; i < N; i++  # N is the number of elements in item_cost array
 		{
 			CostSoFar += A[i]
-			if(CostSoFar > T)
+			if(CostSoFar > M) # M is maximum amount we can spend
 				break
 			numberOfThings++
 		}
