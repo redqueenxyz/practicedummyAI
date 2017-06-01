@@ -1,0 +1,71 @@
+git diff$ is the 'shell prompt'
+Entering 'ls' lists the folders and files inside the folder you are in
+Entering 'pwd' outputs the name of the directory you are currently in. pwd stands for print working directory
+'cd' is a command (change directory), type 'cd' followed by a directory and enter it, it will take you to the desired directory
+'cd ..' moves you up one directory
+'mkdir' creates a new directory in the working directory
+'touch' is a command that creates a new file inside the working directory
+'ls -a' lists al contents, including hidden files, and directories. files starting with a dot (.) are hidden
+'ls -l' lists all contents of a directory in long format
+'ls -t' orders files and directories by the time they were last modified
+'ls -alt' lists all files including hidden files and directories in long form ordered by date last modified
+'cp' copies files and/or directories
+Use 'cp' with the source file as the first argument and the destination as the second argument to copy a file into a directory.
+'cp * smith' with copy everything in the working directory to the smith directory
+'*' is a wildcard. Entering 'cp m*.txt smith/' will copy everything starting with m and ending in .txt to the smith directory
+'mv' is the move command. enter mv followed by the source file then the destination directory to move a file into a directory
+'mv' is also the command to rename files. Enter mv followed by the old file name first then the new file name to rename the file name
+'rm' command deletes files and directories
+'rm -r' is used to delete a directory AND all of its child directories
+'echo' is a command that accepts a string as standard input and echos that string back to the terminal as standard output
+'>' is a command that redirects standard output to a file. (ex. "Hello" > hello.txt ...this redirects "Hello" into the file hello.txt)
+NOTE: '>' overwrites all original content in the destination file on its right.
+'>>' is a command that APPENDS standard output to a file.
+'cat' outputs the contents of a file to the terminal
+'<' takes standard input from the file on its right and inputs it into the program on the left
+'wc' outouts the number of lines, words, and characters in a file, respectively.
+'|' is a "pipe". '"' takes the standard output of the command on the left and "pipes" it as standard input to the command on the right.
+'sort' takes standard input and orders it alphabetically for the standard output
+'uniq' filters out adjacent, duplicate lines in a file
+'grep' is "global regular expressioin print". It searches files for lines 3that match a pattern and returns the result. 'grep' is case sensitive.
+'grep -i' is like 'grep' BUT it is NOT case sensitive.
+'grep -R' searches all files in a directory and outputs filenames and lines containing matched results
+'grep -Rl' searches all files in a directory and outputs only filenames
+'sed' is "stream editor" command. It accepts standard input and modifies it based on an expression, and then display the output. (ex. 's/snow/rain' , "s" means substitution, and this will replace the first the first time "snow" appears, with "rain". To replace all "snow" with "rain", make it 's/snow/rain/g", "g" stands for "global")
+'nano' is a command that opens a new text file in the nano editor - text editor used to configure the environment. (ex. 'nano hello.txt' will open a text file hello.txt in nano editor)
+NOTE: in nano, 'Ctrl + O' (letter, not number) saves a file, 'Ctrl + X' exits nano, 'Ctrl + G' opens help menu.
+'clear' clears the terminal window, moving the command prompt to the top of the screen
+'nano ~/.bash_profile' open "~/.bash_profile". '~' represents the user's home directory. '.' indicates a hidden file
+"~/.bash_profile" is the name of the file used to store environment settings.
+'source' activates the changes in the file for the current session
+'alias' allows you to create keyboard shortcuts in nano. "alias pd="pwd"" creates the alias "pd" for the "pwd" command, which is saved in the bash profile.
+environment variables are variables that can be used across commands and programs and hold info about the environment. USER is an example of an environment variable and is usually set to the the name of the computer's owner.
+'export' makes the variable to be available to all child sessions initiated from the session you are in. 'export VARIABLE="Value"'.
+"PS1" defines the mstyle of the command prompt
+"HOME" is the environment variable that displays the path of the home directory
+"PATH" is an environment variable that stores a list of directories, separated by a colon. These directories contain scripts for the command line to execute.
+'env' is a command that returns a list of the environment variables for the current user.
+
+GIT
+'git init' creates a new git repository
+'git status' inspects the contents from the working directory to the staging area (A GIT PROJECT HAS 3 PIECES, THE WORKING DIRECTORY(where you make changes to files),THE STAGING AREA(bring changes from working directory to staging area), AND THE REPOSITORY(save changes to the repository as a "commit"))
+'git add' adds files from the working directory to the staging area
+'git diff' shows the differnce between the working directory and the staging area. NOTE: Press "q" on your keyboard to exit diff mode
+'git commit' permanently stores file changes from the staging area in the repository
+'git log' shows a list of all previous commits
+The commit you are currently on is known as the "HEAD" commit
+'git checkout HEAD filename' dicards changes in the working directory
+'git reset HEAD filename' Unstages file changes in the staging area
+'git reset SHA' is used to reset to a previous commit in your commit history
+'git branch' lists all git project's branches and indicates the one you are currently on with "*"
+'git branch branch_name' creates a new branch. A "branch" is where you make changes if you would like to make new versions to parts of your project, changes to you branch do not effect the main project. Your main project is on your main branch, which is called "master".
+'git checkout branch_name' switches to another branch
+'git merge branch_name' will join file changes from one branch to another. NOTE: errors may occur if the 2 branches being merged have changes to the same file.
+'git branch -d branch_name' deletes the branch specified
+A remote is a git repository that allows multiple collaborators to work on the same git project from different locations. Collaborators work on the project independently, and merge changes together when they are ready to do so.
+'git clone' creates a local copy of a remote
+When you clone a remote, git gives that remote address the name "origin", for convenience
+'git remote -v' lists a git project's remotes
+'git fetch' fetches work from the remote into the local copy
+'git merge origin/master' merges "origin/master" into your local branch
+'git push origin branch_name' pushes a local branch to the origin remote
